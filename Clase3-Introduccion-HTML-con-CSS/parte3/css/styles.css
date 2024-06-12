@@ -1,0 +1,36 @@
+body {
+  /*Cambiar color de fondo de toda la pagina*/
+  background-color: darkturquoise;
+}
+h1 {
+  /*Color de las letras del tirulo*/
+  color: black;
+  margin: auto 575px 50px;
+
+}
+p {
+  /*Color de las letras del parrafo
+    Color de fondo del padding*/
+  color: darkviolet;
+  background-color: white;
+  /*Tamaño del padding
+    Tamaño y color del border
+    Distancia del margin en general*/
+  padding: 10px;
+  border: 15px solid purple;
+  /*margin: 50px;*/
+
+  /*Para manejar el margin de forma individual cada lado*/
+  /*margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 50px;
+  margin-left: 50px;*/
+
+  /*Manejo automatico del margin arrib-abajo/ derecha-izquierda
+    Manejo de alineacion del texto*/
+  margin: auto 500px 25px;
+  text-align: center;
+
+
+
+}

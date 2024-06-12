@@ -1,0 +1,29 @@
+h1{
+    color: #03045e;
+}
+
+/*Esta es el color del link normal 
+    en un estado de no accion*/
+a:link{
+    color: #023e8a;
+    text-decoration: none;
+}
+
+/*Este es el color del link cuando se ha hecho click 
+    en el link y se ha visitado la otra pagina*/
+a:visited{
+    color: #00b4d8;
+    text-decoration: none;
+}
+
+/*Este es el color del link cuando ponemos 
+    el mouse encima del link*/
+a:hover{
+    color: #bb3e03;
+    text-decoration: underline;
+}
+
+a:active{
+    color: aqua;
+    text-decoration: underline;
+}

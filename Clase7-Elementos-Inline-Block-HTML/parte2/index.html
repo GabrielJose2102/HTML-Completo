@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atributo Class en html</title>
+    <link href="/parte2/css/estilos.css" rel="stylesheet" />
+  </head>
+  <body>
+      <!--identificador de clase puede haber varios-->
+    <div class="contenedor">
+        <!--identificador id  solo puede haber uno por nombre-->
+      <h1 id="titulo">Lenguajes de Programacion</h1>
+      <div class="menu">
+        <a href="#java">Java</a> | 
+        <a href="#python">Python</a> |
+        <a href="#javascript">JavaScript</a>
+      </div>
+      <div id="java" class="tarjeta">
+        <h2>Java</h2>
+        <p><span class="titulo-dos">Creador:</span> James Gosling</p>
+      </div>
+      <div id="python" class="tarjeta">
+        <h2>Python</h2>
+        <p><span class="titulo-dos">Creador:</span> Guido Van Rossum</p>
+      </div>
+      <div id="javascript" class="tarjeta">
+        <h2>JavaScript</h2>
+        <p><span class="titulo-dos">Creador:</span> Brendan Eich</p>
+      </div>
+      <div class="menu">
+        <h2>Resumen de Lenguajes de Programacion</h2>
+        <p>www.gabrielTorrealba.com.ve</p>
+      </div>
+      <!--los id tambien se usan como marcadores para poder ir directo a un elemento 
+          de la pagina ya sea desde la misma pagina o desde otra-->
+      <div class="menu">
+        <a href="#java">Java</a> | 
+        <a href="#python">Python</a> |
+        <a href="#javascript">JavaScript</a>
+      </div>
+    </div>
+  </body>
+</html>

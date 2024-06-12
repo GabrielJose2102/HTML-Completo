@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios en html</h1>
+    <!--Se usa el metodo post para que la informacion del formulario  no sea visiblke en la url
+        y con el metodo get si es visible-->
+    <form method="POST">
+        <!--label es la etiqueta para poner texto a un lado del input el for se uso para vincular 
+            la etiqueta con un click a el input-->
+        <label for="nombre">Nombre:</label><br>
+        <!--input de tipo texto es la caja de texto donde se escribira en el formulario, tambien hay de otros tipos-->
+        <input type="text" id="nombre" name="nombre"
+            placeholder="Escribe tu nombre" required="true"/><br>
+        <!--se agragaron los atributos name para identificar en el url que caja de texto esta enviando la informacion
+            y el atributo placeholder para poner una instruccion en la caja de que se debe introducir en ella-->
+        <label for="apellido">Apellido:</label><br>
+        
+        <input type="text" id="apellido" name="apellido"
+            placeholder="Escribe tu apellido" required="true"/><br>
+
+            <label for="password">Password:</label><br>
+        <!--El input de tipo password se usa para que no se vean los caracteres que se estan ingresando en la caja
+            se usa la propiedad reuired con el valor de true para validar que la caja de texto no este vacia-->
+        <input type="password" id="password" name="password"
+             required="true"/><br>
+        <!--input de tipo submit de valor enviar es un boton para envia los datos guardados en las cajas de textos
+            para ser enviado al servidor-->
+        <input type="submit" value="enviar">
+        <!--Aqui la pripiedad que posee el boton es formnovalidedate es para enviar los datos sin validad campos vacios-->
+        <input type="submit" formnovalidate="formnovalidate" 
+            value="enviar sin validar"/>
+    </form>
+</body>
+</html>

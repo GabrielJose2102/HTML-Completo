@@ -1,0 +1,46 @@
+/*Para ocupar todo el ancho disponible*/
+table{
+    width: 100%;
+}
+/*estilo para las 3 etiquetas de la tabla borde y para que no se muestre una linea 
+    doble se usa el border-collapse, el padding se uso para espaciar entre contenidos*/
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    /*border-spacing: 5px;*/
+}
+
+caption{
+    color: #e63946;
+    font-family: 'Trocchi', serif;
+    font-size: 45px;
+    line-height: 70px;
+}
+
+th{
+    color: #f1faee;
+    background: #1d3557;
+}
+
+tr:nth-child(even){
+    color: black;
+    background: #f1faee;
+}
+
+tr:nth-child(odd){
+    color: black;
+    background: #a8dadc;
+}
+
+/*tambien podemos modificar individualmente 
+    cada etiqueta ejemplo aqui alineacion 
+    del texto tanto en th como en td.
+th{
+    text-align: center;
+}
+
+td{
+    text-align: left;
+}
+*/

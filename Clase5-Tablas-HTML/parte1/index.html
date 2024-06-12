@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas con html</title>
+    <link href="/css/estilos.css" rel="stylesheet" >
+</head>
+<body>
+    <!--Etiqueta table para crear la tabla pero sin renglones con un borde visible de 1px
+        para ver el cuadro de la tabla y cuando ase declaren las etiquetas de los renglones-->
+    <table>
+        <!--etiqueta tr representa un renglon-->
+        <tr>
+            <!--etiqueta th representa que el renglon es la cabecera 
+                cada uno es un espacio para datos-->
+                <!--Uso de colspan para hacer que un renglo ocupe
+                    mas posiciones en este caso 2 posiciones-->
+            <th colspan="2">Nombre</th>
+            <!--<th>Apellido</th>se puso entre comentarios para demostrar que hace colspan-->
+            <th>Email</th>
+        </tr>
+        <tr>
+            <!--etiqueta td representa a los datos en la tabla es la forma de diferenciar
+                 a un dato de la cabecera de la tabla-->
+            <td>Gabariel</td>
+            <td>Torrealba</td>
+            <!--Uso de rowspan para hacer que las columnas ocupe mas posiciones
+                igual al otro ejemplo dos posiciones-->
+            <td rowspan="2">Gabrieltorrealbak@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Jose</td>
+            <td>Luque</td>
+            <!--<td>Joseluquek@gmail.com</td> se puso en comentarios para demostrar el ejemplo de rowspan-->
+        </tr>
+    </table>
+</body>
+</html>

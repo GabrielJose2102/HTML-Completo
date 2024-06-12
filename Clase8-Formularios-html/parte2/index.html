@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <h1>Formularios en html</h1>
+    <!--En este documento de codigo mejores la forma de ordena el codigo de esta manera hace 
+            mas legible y se optimiza el tiempo que se tarda en entenderlo-->
+    
+    <!--las propiedades que se usarondentro del from como 
+      action que es para indicar la url a donde se enviaran losdatos del
+      formulario-->
+    <form 
+      action="mi_servidor" 
+      target="_blank" 
+      autocomplete="on">
+      <!--fieldset es un marco que se usa para encerrar todas
+        las etiquetas del formulario
+        mientras que legend se usa para agregarle un titulo a ese
+        formulario que esta encerrado en fieldset -->
+      <fieldset>
+        <legend>Datos Personales:</legend>
+
+        <!--disabled="true" es opcional es para desabilitar el campo
+          y la informacion de este campo no se envia-->
+        <label for="idPersona">Id persona:</label><br />
+        <input
+          type="text"
+          id="idPersona"
+          name="idPersona"
+          readonly="true"
+          value="100"
+        /><br />
+
+        <input 
+          type="hidden" 
+          id="sistema"
+          name="sistema"
+          value="SAP"
+        />
+
+        <label for="nombre">Nombre:</label><br />
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Escribe tu nombre"
+          required="true"
+        /><br />
+
+        <label for="apellido">Apellido:</label><br />
+        <input
+          type="text"
+          id="apellido"
+          name="apellido"
+          placeholder="Escribe tu apellido"
+          required="true"
+        /><br />
+
+        <label for="password">Password:</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required="true"
+        /><br />
+
+        <label for="email">Email:</label><br />
+        <!--El email es para introducir el correo en la caja de texto-->
+        <input type="email" id="email" name="email"/><br />
+
+        <label for="edad">Edad:</label><br />
+        <!--Es para introducir solo nuemro y se usa la propiedad step="any" para poder introducir numeros de tipo 
+              decimal-->
+        <input 
+          type="number" 
+          id="edad" 
+          name="edad" 
+          step="any" 
+      /><br />
+
+        <label>Genero</label><br />
+        <!--RadioButtom es para crear un boton de seleccion que junto con otros botones si se hace click sobre uno
+              y hay otro cliqueado se descliqueara y pasara al nuevo boton cliqueado-->
+        <input 
+          type="radio" 
+          id="femenino" 
+          name="genero" 
+          value="femenino" 
+        />
+        <label for="femenino">Femenino</label><br />
+
+        <!--Para que los botones esten conectados entre si deben de tener el mismo name y de esta forma
+              se envia solo la informacion del boton que este seleccionado en ese momento-->
+        <input 
+          type="radio" 
+          id="masculino" 
+          name="genero" 
+          value="masculino" 
+        />
+        <label for="masculino">Masculino</label><br />
+
+        <!--CheckBox son parecidos a los RadioButtom pero estos si entan conectados si se pueden cliquear todo
+              y se enviara la informacion de todos los que esten seleccionados no importa cuantos sean-->
+        <label>Genero de musica</label><br />
+        <input 
+          type="checkbox" 
+          id="clasica" 
+          name="musica" 
+          value="clasica" 
+        />
+        <label for="clasica">Clasica</label><br />
+
+        <!--Estos tambien deben de poseer el mismo name para que esten conectados entre si-->
+        <input 
+          type="checkbox" 
+          id="jazz" 
+          name="musica" 
+          value="jazz" 
+        />
+        <label for="jazz">Jazz</label><br>
+
+        
+        <label for="autos">Auto favorito</label><br>
+        <!--La etiqueta de select se usa para crear una lista desplegable-->
+        <select id="autos" name="autos" >
+          <!--option se usa para crear los elementos que estaran dentro 
+            de select-->
+          <option value="volvo">Volvo</option>
+          <option value="bmw">BMW</option>
+          <option value="audi" selected="true">Audi</option>
+        </select><br>
+
+        
+        <label for="comentario">Comentario:</label><br>
+        <!--textarea es un campo de texto amplio que mayormente se usa para 
+          alojar comentarios-->
+        <textarea 
+          name="comentario" 
+          id="comentario" 
+          cols="30" 
+          rows="10"
+        >Este es mi comentario
+      </textarea><br>
+
+      <!--Este es un boton de enviar que debe validar los que los 
+        campos que va a enviar no esten vacios-->
+      <input type="submit"value="enviar"/>
+
+        <!--Este boton no necesita validar si lo campos estan vacios
+          solo envia todo sin importar-->
+        <input
+          type="submit"
+          formnovalidate="formnovalidate"
+          value="enviar sin validar"
+        />
+        <input type="reset" value="Restablecer">
+    </fieldset>
+    </form>
+  </body>
+</html>

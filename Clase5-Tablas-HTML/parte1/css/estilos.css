@@ -1,0 +1,20 @@
+/*estilo para las 3 etiquetas de la tabla borde y para que no se muestre una linea 
+    doble se usa el border-collapse, el padding se uso para espaciar entre contenidos*/
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    /*border-spacing: 5px;*/
+}
+
+/*tambien podemos modificar individualmente 
+    cada etiqueta ejemplo aqui alineacion 
+    del texto tanto en th como en td.
+th{
+    text-align: center;
+}
+
+td{
+    text-align: left;
+}
+*/

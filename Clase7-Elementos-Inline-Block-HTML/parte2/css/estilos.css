@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    color: maroon;
+}
+
+p{
+    color: purple;
+}
+
+/*Identificacion por id se realiza en css por medioo de un numeral # 
+    y al contrario que las clase solo debe haber una sola etiqueta identificada
+     con el nombre que se le ponga*/
+#titulo{
+    text-align: center;
+    color: darkviolet;
+    margin: 15px;
+}
+
+/*La clases llevan un punto para ser identificadas por css
+    puede haber varias etiquetas con el mismo nombre de clase*/
+.tarjeta{
+    border: 10px solid darkblue;
+    background: lightblue;
+    text-align: center;
+    margin: 10px 700px;
+    padding: 25px;
+}
+
+.titulo-dos{
+    color: yellow;
+}
+
+.menu{
+    text-align: center;
+}
+
+.contenedor{
+    border: 5px solid black;
+}

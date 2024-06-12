@@ -1,0 +1,40 @@
+/*Color del titulo*/
+h1{
+    color: #1d3557;
+}
+
+/*Quitamos los puntos de un lado de la lista
+    color de fondo
+    overflow es para que l lista este aparte de del titulo sino se pega en la misma linea
+    quitamos el margin y padding*/
+ul{
+    list-style-type: none;
+    background: #457b9d;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/*esto es para que los elementos de la lista esten uno a lado del otro y no debajo*/
+li{
+    float: left;
+}
+
+/*pusimos cada link como un bloque independiente
+    color de la funete
+    se alinearon al centro
+    se coloco padding para separarlos
+    y se le quito ael subrayado de los link*/
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+/*se le cambio en color de fondo cuando tenga la flecha encima el link*/
+li a:hover{
+    background: #1d3557;
+    color: white;
+}

@@ -1,0 +1,61 @@
+/*se uso para que se ocupara el 100% de la altura*/
+html{
+    height: 100%;
+}
+/*Aqui se quito tanto el margin como el padding
+    y se le agrego el color de fondo con la propiedad 
+    linear- gradient para que se haga un degradado del color*/
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#7209b7, #3f37c0);
+}
+/*aqui se manipulo el margin, padding i width
+    tambioen se le agrego un color de fondo al formulario con 0.5 
+    de transparencia y se le cambio en border por un 
+    border redondeado*/
+.contenedor{
+    margin: 50px auto;
+    width: 400px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+/*aqui se manipulo solo el titulo del formulario*/
+.contenedor h2{
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 30px;
+    color: #4cc9f0;
+    text-align: center;
+}
+/*cambio de color de las etiquetas que estan encima de las 
+    cajas de texto*/
+.contenedor .elemento label{
+    color: #fff;
+}
+/*manipulacion de las cajas de textos
+    ancho que ocupan, padding, color de la fuente, colorfondo
+    transparente sin border solo en l parte de abajo de 1px
+    y un margen de 30px de separacion*/
+.contenedor .elemento input{
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 30px;
+}
+/*cambio de fondo del boton, sin border, espacio entre letras
+    con letter-spacing, cambio del cursor a la mano cuando 
+    se esta encima del boton, padding y margin*/
+.contenedor .elemento input[type="submit"]{
+    background-color: #f72585;
+    border: none;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-top: 15px;
+    margin-top: 30px;
+}

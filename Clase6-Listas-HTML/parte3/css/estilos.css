@@ -1,0 +1,26 @@
+/*Se le quito los numeros por default de ordenamiento de la lista
+    y se uso la propiedad counter-reset para poner el nuevo ordenamiento*/
+ol{
+    list-style: none;
+    counter-reset: contador;
+}
+
+/*Aqui se autoincrementa el contador de ordenamiento de la lista*/
+ol li{
+    counter-increment: contador;
+}
+
+/*A esta propiedad se le conoce como selector por eso los dos puntos y la palabra before que quiere decir ante
+    content se uso para poner texto y el numero de ordenamiento antes de lo que esta dentro de la lista
+    y cambiamos el colo del texto pero solo el que esta en este selector*/
+ol li::before{
+    content: 'Curso' counter(contador) ') ';
+    color: tomato;
+}
+
+/*Este selector es parecido al de before pero after quiere decir despues es decir lo que se agregue aqui va deespues 
+de lo que esta dentro de la lista
+solo se agrego un punto*/
+ol li::after{
+    content: '.';
+}
