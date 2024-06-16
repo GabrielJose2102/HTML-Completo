@@ -299,7 +299,6 @@ documento.
     <h2>Bienvenidos al curso de universidad HTML</h2>
   </body>
 </html>
-
 ```
 ## Autor
 
